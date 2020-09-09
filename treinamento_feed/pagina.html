@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Piupiuwer</title>
+        <link rel='stylesheet' href='style.css'>
+        <link rel="shortcut icon" href="./images/logo.svg" >
+    </head>
+
+    <body>
+        <div class='wrapper'>
+            <div class='menu'>
+                
+                <img id='logo' src=./images/logo.svg alt='bird'>
+
+                <ul>
+                    <li class='active'><img src='./images/home.svg' alt='home'><a href=''>Início</a></li>
+                    <li><img src='./images/hash.svg' alt='hash'><a href=''>Explore</a></li>
+                    <li><img src='./images/bell.svg' alt='bell'><a href=''>Notificações</a></li>
+                    <li><img src='./images/mail.svg' alt='mail'><a href=''>Mensagens</a></li>
+                    <li><img src='./images/bookmark.svg' alt='hash'><a href=''>Marcadores</a></li>
+                    <li><img src='./images/list.svg' alt='hash'><a href=''>Listas</a></li>
+                    <li><img src='./images/person.svg' alt='hash'><a href=''>Perfil</a></li>                        
+                </ul>
+
+                <div class='profile'>
+                    <img src='./images/photo.svg' alt='picture'>
+                    <div class='name'>
+                        <strong>Beija-Flor</strong>
+                        <p>@glaucis_dohrnii</p>
+                    </div>
+                    <img class='icon' src='./images/chevron-down.svg' alt='chevron-down'>
+                </div>
+
+            </div>
+            <section class='timeline'>
+                <div class='header'>
+                    <h1>Início</h1>
+                    <img src='./images/sun.svg' alt='sun'>
+                </div> 
+                <form class="inpiu">
+                    <img src='./images/photo.svg' alt='photo'>
+                    <div class="enter">
+                        <textarea placeholder='Dá um Piu!' id='textareaAutogrow'></textarea> 
+                        <!-- <span  role='textbox' id='span' contenteditable></span> -->
+                        <p id='counter'></p>
+                        <div class="options">
+                            <div class="icons">
+                                <img src='./images/image.svg' alt='image'>
+                                <img src='./images/gif.svg' alt='gif'>
+                                <img src='./images/server.svg' alt='server'>
+                                <img src='./images/smile.svg' alt='smile'>
+                                <img src='./images/calendar.svg' alt='calender'>
+                            </div>
+                            <button id='piupiu' class='disabled'>Piupiu</button>
+                        </div>
+                        <div class="tooltip">
+                            <span id='cheio' class='none'>Um Piu deve conter, no máximo, 140 carateres!</span>
+                            <span id='vazio' class='none'>Digite um Piu!</span>
+                        </div>
+                    </div>
+                </form>
+
+                <!--div class="piu">
+                   <img src='./images/piupic.png' alt='photo'>
+                   <div class="info">                       
+                       <div class="user-info">
+                           <strong>Pintinho Amarelinho</strong>
+                           <p>@galinho_chickenlittle . 10 min</p>
+                           
+                       </div>
+                       <div class="text">
+                           Hoje to só o pinto no lixo :p
+                       </div>
+                       <div class="react">
+                            <div class='count' id='comment'>                       
+                                <img src='./images/message-circle.svg' alt='comment'>
+                                <p>3</p>
+                            </div>
+                            <div class='count' id='repiu'>
+                                <img src='./images/repiu.svg' alt='repiu'>
+                                <p>6</p>
+                            </div>                           
+                            <div class='count' id='heart'>
+                                <img src='./images/heart.svg' alt='heart'>
+                                <p>5</p>
+                            </div>
+                           <img src='./images/upload.svg' alt='upload'>
+                       </div>
+                   </div>
+                   <img src='./images/trash.svg' alt='trash'>
+                </div>   -->     
+            </section>
+            <div class='widgets'>
+                <input id='pesquisar' type='text' placeholder='Pesquisar no Piupiuwer'>
+                
+                <div class="widget">
+                    <div class="title">O que está rolando</div>
+                    
+                    <ul>
+                        <li>
+                            <div class="text">
+                                <p>Trending in Brazil</p>
+                                <strong>Frango à passarinho</strong>
+                                <p>10.5K Pius</p>
+                            </div>                            
+                        </li>
+                        <li>
+                            <div class="text">
+                                <p>Amazônia . September 02, 2020</p>
+                                <strong>Pica-pau em perigo de extinção</strong>
+                                <n>Aves alegam inavasão de propriedade e vandalismo</n>
+                            </div>
+                            <img src='./images/amazonia.png' alt='floresta'>                  
+                        </li>
+                        <li>
+                            <div class="text">
+                                <strong>#GalinhaVoadora</strong>
+                                <n>Verdade ou fake? Entenda o caso</n>
+                                <p>8.3K Pius</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text">
+                                <p>Pandemia . 3 hours ago</p>
+                                <strong>Número de humanos continua a crescer</strong>
+                                <n>Entenda como se proteger e o que pode ser feito para achatar a curva.</n>
+                            </div>
+                            <img src='./images/croud.png' alt='croud'>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <div class="title">Quem seguir</div>
+
+                    <ul>
+                        <li>
+                            <img id='profile' src='./images/arara.png' alt='arara azul'>
+                            <div class="text">
+                                <strong>Arara rara</strong>
+                                <p>@blue_rio</p>
+                            </div>
+                            <button>Seguir</button>
+                        </li>
+                        <li>
+                            <img id='profile' src='./images/coruja.png' alt='coruja branca'>
+                            <div class="text">
+                                <strong>Edwiges</strong>
+                                <p>@corujadasneves</p>
+                            </div>
+                            <button>Seguir</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        <script src='./js/printPius.js'></script>
+        <script src='./js/darUmPiu.js' ></script>
+        <script src='./js/reagirAoPiu.js'></script>
+        <script src='./js/pesquisarUsuario.js'></script>
+        <script src='./js/autogrow.js'></script>
+
+    </body>
+
+
+</html>
